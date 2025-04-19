@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies - CookiesMu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Gaya khusus untuk halaman cookies dengan layout kolom */
+      .cookies-page {
+        padding: 20px;
+        background-color: #f4f4f4; /* Contoh background */
+        color: #333;
+        margin-top: 100px; /* Tingkatkan nilai margin-top menjadi 100px (atau nilai lain sesuai keinginan Anda) */
+      }
+
+      .cookies-list {
+        list-style: none;
+        padding: 0;
+        display: grid; /* Menggunakan CSS Grid untuk layout kolom */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Membuat kolom responsif dengan lebar minimal 300px */
+        gap: 20px; /* Jarak antar item */
+        margin-top: 30px; /* Jarak antara judul dan daftar cookies */
+      }
+
+      .cookie-item {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+      }
+
+      .cookie-name {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(--primary); /* Warna cokelat */
+      }
+
+      .ingredients-title,
+      .expired-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .ingredients-list {
+        list-style: disc;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        font-size: 0.9em;
+      }
+
+      .expired-text {
+        font-size: 0.9em;
+      }
+
+      /* Anda bisa menambahkan gaya lain sesuai desain website Anda */
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">Cookies<span>Mu</span>.</a>
+
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#menu">Menu</a>
+          <a href="#products">Produk</a>
+          <a href="#contact">Kontak</a>
+          <a href="#contact">Testimoni</a>
+          <a href="#contact">Cookies</a>
+        </div>
+
+        <div class="navbar-extra">
+          <a href="#" id="search-button"><i data-feather="search"></i></a>
+          <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="cookies-page">
+      <h1>Pilihan Cookies Spesial Kami</h1>
+      <ul class="cookies-list">
+        <li class="cookie-item">
+          <h2 class="cookie-name">Velvet Indulgence</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung terigu premium</li>
+            <li>Cokelat Belgia leleh</li>
+            <li>Gula aren organik</li>
+            <li>Mentega tanpa garam</li>
+            <li>Ekstrak vanila murni</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">25 April 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Whimsical Dream</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung almond</li>
+            <li>Cranberry kering</li>
+            <li>White chocolate chips</li>
+            <li>Madu hutan</li>
+            <li>Parutan kulit jeruk</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">30 April 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Midnight Blish</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung gandum utuh</li>
+            <li>Dark cocoa powder</li>
+            <li>Gula kelapa</li>
+            <li>Minyak kelapa</li>
+            <li>Kacang mete panggang</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">05 Mei 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Heavenly Swirl</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung rye</li>
+            <li>Selai kacang</li>
+            <li>Choco chips mini</li>
+            <li>Sirup maple</li>
+            <li>Garam laut</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">10 Mei 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Golden Delight</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung jagung</li>
+            <li>Keju cheddar parut</li>
+            <li>Biji wijen</li>
+            <li>Margarin</li>
+            <li>Bubuk bawang putih</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">15 Mei 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Paradise Stack</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung singkong</li>
+            <li>Kelapa parut kering</li>
+            <li>Susu kental manis</li>
+            <li>Telur ayam</li>
+            <li>Perisa pandan</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">20 Mei 2025</p>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 CookiesMu. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

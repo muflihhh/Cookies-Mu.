@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookiesMu</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Cookies<span>Mu</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+        <a href="#contact">Testimoni</a>
+        <a href="#contact">Cookies</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/2.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 2</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/3.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 3</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start-->
+    <section class="hero" class="hero">
+      <main class="content">
+        <h1>Mari Nikmati <span>CookiesMu</span></h1>
+        <p>Nikmati kelezatan disetiap gigitannya dengan berbagai pilihan rasa yang menggugah selera. Dari coklat yang meleleh hingga kacang kenari yang renyah, Kami punya semua untuk memuaskan Rasa Manis Anda!</p>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section end-->
+
+    <!-- About Section- start-->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Harus CookiesMu?</h3>
+          <p>Dari Coklat leleh yang bikin nagih sampai rasa unik yang gaada duanya, ada buat semua selera!</p>
+          <p>Cookies kami dipanggang setiap hari, Jadi pastikan kamu mendapat yang fresh dan crunchy!</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section- end-->
+
+    <!-- Menu Section start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/menu/1.jpg" alt="Velvet Indulgence" class="menu-card-img" />
+          <h3 class="menu-card-title">- Velvet Indulgence -</h3>
+          <p class="menu-card-price">IDR 45K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/2.jpg" alt="Whimsical Dream" class="menu-card-img" />
+          <h3 class="menu-card-title">- Whimsical Dream -</h3>
+          <p class="menu-card-price">IDR 30K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/3.jpg" alt="Midnight Blish" class="menu-card-img" />
+          <h3 class="menu-card-title">- Midnight Blish -</h3>
+          <p class="menu-card-price">IDR 35K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/4.jpg" alt="Heavenly Swiril" class="menu-card-img" />
+          <h3 class="menu-card-title">- Heavenly Swirl -</h3>
+          <p class="menu-card-price">IDR 40K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/5.jpg" alt="Golden Delight" class="menu-card-img" />
+          <h3 class="menu-card-title">- Golden Delight -</h3>
+          <p class="menu-card-price">IDR 35K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/6.jpg" alt="Paradise Stack" class="menu-card-img" />
+          <h3 class="menu-card-title">- Paradise Stack -</h3>
+          <p class="menu-card-price">IDR 50K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end -->
+
+    <!-- Products Section start -->
+    <section class="products" id="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/1.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Velvet Indulgence</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 35000</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/2.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Whimsical Dream</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 45000</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/3.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Paradise Stack</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 50000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Products Section end -->
+
+    <!-- Order start -->
+    <section id="pemesanan" class="pemesanan">
+      <h2><span>Order</span> CookiesMu!</h2>
+      <form action="#" method="post" class="form-pemesanan-grid">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+          <label for="menu">Menu:</label>
+          <select id="menu" name="menu" required>
+            <option value="">-- Pilih Menu --</option>
+            <option value="velvet-indulgence">Velvet Indulgence</option>
+            <option value="whimsical-dream">Whimsical Dream</option>
+            <option value="midnight-blish">Midnight Blish</option>
+            <option value="heavenly-swirl">Heavenly Swirl</option>
+            <option value="golden-delight">Golden Delight</option>
+            <option value="paradise-stack">Paradise Stack</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="jumlah">Jumlah Pesanan:</label>
+          <input type="number" id="jumlah" name="jumlah" min="1" value="1" required>
+        </div>
+        <button type="submit" class="btn">Kirim Pesanan</button>
+      </form>
+    </section>
+    <!-- Order end -->
+
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347862248!2d107.57311709235512!3d-6.903444341687889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1672408575523!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <button type="submit" class="btn">kirim pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Ingredietns start -->
+    <section id="cookies-page" class="cookies-page">
+      <h2><span>Pilih cookies</span> Spesialmu!!</h2>
+      <ul class="cookies-list">
+        <li class="cookie-item">
+          <h2 class="cookie-name">Velvet Indulgence</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung terigu premium</li>
+            <li>Cokelat Belgia leleh</li>
+            <li>Gula aren organik</li>
+            <li>Mentega tanpa garam</li>
+            <li>Ekstrak vanila murni</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">25 April 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Whimsical Dream</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung almond</li>
+            <li>Cranberry kering</li>
+            <li>White chocolate chips</li>
+            <li>Madu hutan</li>
+            <li>Parutan kulit jeruk</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">30 April 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Midnight Blish</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung gandum utuh</li>
+            <li>Dark cocoa powder</li>
+            <li>Gula kelapa</li>
+            <li>Minyak kelapa</li>
+            <li>Kacang mete panggang</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">05 Mei 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Heavenly Swirl</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung rye</li>
+            <li>Selai kacang</li>
+            <li>Choco chips mini</li>
+            <li>Sirup maple</li>
+            <li>Garam laut</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">10 Mei 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Golden Delight</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung jagung</li>
+            <li>Keju cheddar parut</li>
+            <li>Biji wijen</li>
+            <li>Margarin</li>
+            <li>Bubuk bawang putih</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">15 Mei 2025</p>
+        </li>
+
+        <li class="cookie-item">
+          <h2 class="cookie-name">Paradise Stack</h2>
+          <p class="ingredients-title">Bahan-bahan:</p>
+          <ul class="ingredients-list">
+            <li>Tepung singkong</li>
+            <li>Kelapa parut kering</li>
+            <li>Susu kental manis</li>
+            <li>Telur ayam</li>
+            <li>Perisa pandan</li>
+          </ul>
+          <p class="expired-title">Kedaluwarsa:</p>
+          <p class="expired-text">20 Mei 2025</p>
+        </li>
+      </ul>
+    </main>
+    <!-- Ingredietns end -->
+
+     <!-- Testimoni section start-->
+     <section id="menu" class="menu">
+      <h2><span>Testimoni</span> Pelanggan</h2>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/testimoni/1.jpg" alt="Syakina zalfa" class="menu-card-img" />
+          <h3 class="menu-card-tittle">- Syakina zalfa -</h3>
+          <p class="menu-card-price">Rasanya Enak bangetttt!!</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/testimoni/2.jpg" alt="Adi Bayu Saputra" class="menu-card-img" />
+          <h3 class="menu-card-tittle">- Adi Bayu Saputra -</h3>
+          <p class="menu-card-price">Rasannya bikin nagihh!!</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/testimoni/3.png" alt="Dina Cahyanti" class="menu-card-img" />
+          <h3 class="menu-card-tittle">- Dina Cahyanti -</h3>
+          <p class="menu-card-price">Ini yang aku cari, enak dan worth it</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/testimoni/4.png" alt="Sophia Anindita" class="menu-card-img" />
+          <h3 class="menu-card-tittle">- Sophia Anindita -</h3>
+          <p class="menu-card-price">- Gilaaa...Top Cookies sih ini!</p>
+        </div>
+  <!-- Testimoni section end-->
+   
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Muflichatur Rofiah</a>. | &copy; 2025.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Velvet Indulgence</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K</div>
+            <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
